@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тихий шепот</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #ff3b3b;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    background-color: #2a2a2a;
+    color: #ff3b3b;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: translateY(0);
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+  }
+
+  .link-btn:hover {
+    background-color: #ff3b3b;
+    color: #1b1b1b;
+  }
+
+  @keyframes fadeUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 0.85rem;
+    color: #777;
+    text-align: center;
+  }
+
+  /* Анимация кнопок с задержкой */
+  .link-btn:nth-child(1) { animation-delay: 0.1s; }
+  .link-btn:nth-child(2) { animation-delay: 0.2s; }
+  .link-btn:nth-child(3) { animation-delay: 0.3s; }
+  .link-btn:nth-child(4) { animation-delay: 0.4s; }
+  .link-btn:nth-child(5) { animation-delay: 0.5s; }
+  .link-btn:nth-child(6) { animation-delay: 0.6s; }
+  .link-btn:nth-child(7) { animation-delay: 0.7s; }
+  .link-btn:nth-child(8) { animation-delay: 0.8s; }
+
+  /* Иконки */
+  .link-btn i {
+    min-width: 20px;
+    text-align: center;
+  }
+
+  @media(max-width:500px){
+    h1 { font-size: 2.5rem; }
+    .link-btn { padding: 12px 15px; font-size: 0.95rem; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Тихий шепот</h1>
+
+<div class="links">
+  <a class="link-btn" href="https://t.me/vrnqs_official" target="_blank"><i class="fab fa-telegram-plane"></i>Я</a>
+  <a class="link-btn" href="https://t.me/aktclan" target="_blank"><i class="fas fa-project-diagram"></i>Проект</a>
+  <a class="link-btn" href="https://t.me/+TzoIuZQbi945NDgy" target="_blank"><i class="fas fa-dollar-sign"></i>Прайс</a>
+  <a class="link-btn" href="https://t.me/blogshepot" target="_blank"><i class="fas fa-blog"></i>Блог</a>
+  <a class="link-btn" href="https://t.me/ortzwvrn" target="_blank"><i class="fas fa-comments"></i>Отзывы</a>
+  <a class="link-btn" href="https://t.me/+Co-gH9wvJT0yODUy" target="_blank"><i class="fas fa-user-secret"></i>Фри приват</a>
+  <a class="link-btn" href="https://t.me/+3XoK903PrflmNWEy" target="_blank"><i class="fas fa-users"></i>Собственный клан</a>
+  <a class="link-btn" href="https://t.me/+JKRlAhDPOk83ZTU1" target="_blank"><i class="fas fa-comment"></i>Мой чат</a>
+</div>
+
+<footer>
+  © 2026 Тихий шепот
+</footer>
+
+</body>
+</html>
